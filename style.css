@@ -1,5 +1,90 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    line-height: 1.5;
+    margin:0;
+    padding: 0;
+    list-style-position: inside;
+}
+
 body {
     font-family: Helvetica, Arial, Verdana, sans-serif;
+    background-color: #e9e9e9
+}
+
+header {
+    border-bottom: solid #ffae00 3px;
+    min-width: 100%;
+    height: 6rem;
+    position: static;
+    background-color: #555454;
+    background-image: linear-gradient(90deg,#3b3b3b,#868686);
+    padding: 0.5rem 1rem 0.5rem 1rem;
+}
+
+footer {
+    border-top: solid #ffae00 3px;
+    min-width: 100%;
+    height: 6rem;
+    position: static;
+    background-color: #555454;
+    background-image: linear-gradient(90deg,#868686,#3b3b3b);
+    padding: 0.5rem 1rem 0.5rem 1rem;
+}
+
+.socials {
+    width: 2rem;
+    margin-right: 0.5rem;
+}
+
+.odin-head {
+    height: 5rem;
+    width: auto;
+    margin-right: 0.75rem;
+}
+
+header a,
+footer a {
+    text-decoration: none;
+    color: #ffae00;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+header a:hover,
+footer a:hover {
+    opacity: 0.5;
+}
+
+.OR a {
+    display: flex;
+    align-items: center;
+    font-size: 2.5rem;
+}
+
+.RH {
+    list-style: none;
+    display: inline-block;
+    margin: 0.5rem;
+}
+
+.navdiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.recipe-card {
+    width: 50rem;
+    background-color: white;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    border: 2px solid #ffae00;
 }
 
 .container {
@@ -11,29 +96,58 @@ body {
 
 h1 {
     text-align: center;
-    font-size: 50px;
+    font-size: 3.5rem;
     text-transform: uppercase;
-    background: linear-gradient(180deg,#eebd61, #4b4949);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    margin-bottom: 1rem;
 }
 
 h2 {
     color: #0e0375;
     font-style: italic;
-    font-size: 20px;
-    margin: 0;
+    margin-bottom: 1rem;
 }
 
 h3 {
-    font-size: 25px;
+    font-size: 1.5rem;
 }
 
-h4 {
-    font-size: 20px;
+h2, h4 {
+    font-size: 1.25rem;
 }
 
 h3, h4 {
     text-align: center;
-    margin-bottom: 0;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    text-decoration: underline;
+}
+
+.home-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 1rem auto;
+}
+
+.from-home {
+    display: flex;
+    flex-direction: column;
+    width: 17rem;
+    margin: 0.5rem;
+}
+
+.dish:hover {
+    opacity: 0.5;
+}
+
+.dish-text {
+    text-align: center;
+    color: #ffae00;
+    background-color: #000000;
+    font-size: 1.3rem;
+}
+
+.dish-text:hover {
+    color: #000000;
+    background-color: #ffae00;
 }

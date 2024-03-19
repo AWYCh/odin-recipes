@@ -34,8 +34,7 @@ header {
     border-top: solid #ffae00 3px;
     min-width: 100%;
     height: 6rem;
-    position: static;
-    bottom: 0;
+    position: static;  
     background-color: #555454;
     background-image: linear-gradient(90deg,#868686,#3b3b3b);
     padding: 0.5rem 1rem 0.5rem 1rem;
@@ -82,6 +81,13 @@ header a:hover,
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-height: 100vh;
 }
 
 .recipe-card {

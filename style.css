@@ -96,6 +96,10 @@ ul.header-right {
 }
 
 .recipe-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 50rem;
     background-color: white;
     margin: 2rem auto;
@@ -103,11 +107,21 @@ ul.header-right {
     border: 2px solid #ffae00;
 }
 
-.container {
+.ingredients {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    background-color: #fff9ed;
     justify-content: center;
+    align-items: center;
+    width: 50rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-left: 2px solid #ffae00;
+    border-right: 2px solid #ffae00;
+}
+
+.ingredients ul {
+    list-style: none;
 }
 
 h1 {
@@ -120,6 +134,7 @@ h1 {
 h2 {
     color: #0e0375;
     font-style: italic;
+    text-align: center;
     margin-bottom: 1rem;
 }
 
@@ -133,9 +148,12 @@ h2, h4 {
 
 h3, h4 {
     text-align: center;
-    margin-top: 1rem;
     margin-bottom: 0.5rem;
     text-decoration: underline;
+}
+
+h4 {
+    margin-top: 0.5rem;
 }
 
 .home-row {
@@ -158,9 +176,11 @@ h3, h4 {
 }
 
 .dish-text {
+    display: flex;
     text-align: center;
-    color: #ffae00;
+    justify-content: center;
     background-color: #000000;
+    color: #ffae00;
     font-size: 1.3rem;
 }
 

@@ -103,25 +103,39 @@ ul.header-right {
     width: 50rem;
     background-color: white;
     margin: 2rem auto;
-    padding: 1.5rem;
+    padding: 1.5rem 1.5rem 0 1.5rem;
     border: 2px solid #ffae00;
+}
+
+.description {
+    background-color: #fff9ed;
+    width: 50rem;
+    padding: 0.5rem 1.5rem;
+    border-left: 2px solid #ffae00;
+    border-right: 2px solid #ffae00;
 }
 
 .ingredients {
     display: flex;
     flex-direction: column;
-    background-color: #fff9ed;
     justify-content: center;
     align-items: center;
     width: 50rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    padding: 0.5rem 1.5rem;
+}
+
+.steps {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff9ed;
+    width: 50rem;
+    padding: 0.5rem 1.5rem 1.5rem 1.5rem;
     border-left: 2px solid #ffae00;
     border-right: 2px solid #ffae00;
 }
 
-.ingredients ul {
-    list-style: none;
+ol .steps {
+    text-align: left;
 }
 
 h1 {
